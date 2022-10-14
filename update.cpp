@@ -113,7 +113,7 @@ void update_data(){
     cout << "Index data yang akan diubah : "; 
     cin >> index;
 
-    if (index <= n + 1) {
+    if ((index <= n) and (index >= 1)) {
         cout << endl << endl;
         cout << "Data Mahasiswa ke - " << index << endl;
         cout << "1. Nama : " << maba[index - 1].nama << endl;
@@ -139,6 +139,6 @@ void update_data(){
         cout << "\nKom : " << maba[index - 1].kom;
         cout << endl;
     } else {
-        cout << "Index Anda tidak dapat dideteksi" << endl;
+        cout << "Index Anda diluar jangkauan" << endl;
     }
 }
